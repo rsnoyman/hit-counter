@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import {
-  readFile,
-  writeFile,
-} from '../helpers/file-helpers';
+import { readFile, writeFile } from "../helpers/file-helpers";
 
-const DATABASE_PATH = '/src/database.json';
+const DATABASE_PATH = "/src/database.json";
 
 /*
+async functions
+
 `readFile` takes 1 argument:
 • the path to the file:
 
@@ -24,10 +23,12 @@ writeFile(
 */
 
 function Home() {
+  // TODO
+
   return (
     <main>
       <h1>Welcome!</h1>
-      <p>You are visitor number X.</p>
+      <p>You are visitor number XXX.</p>
     </main>
   );
 }
