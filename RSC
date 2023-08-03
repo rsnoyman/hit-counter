@@ -1,0 +1,16 @@
+- [ ] What are RSCs?
+
+  - [ ] Previously frameworks like Next and Gatsby had their own way to do SSR. RSC are 1st party solution to implement SSR.
+
+  - [ ] Server components are React components that only render on the server.
+
+  - [ ] As a result, they can't create new state variables (they wouldn't be able to re-render if the state changed!).
+        They also can't consume context, or use effects. They're a small subset of a typical React component.
+
+  - [ ] But because we aren’t concerned about rerenders, we can have components that call async functions directly!
+
+  - [ ] All of this happens on the server, before the HTML file is sent to the client
+
+  - [ ] The components that we are used to are referred to as Client Components in this new paradigm.
+        Somewhat confusingly, the are still render on the server but unlike server components,
+        they can be rerendered on client side, once the JS bundle has been downloaded.
